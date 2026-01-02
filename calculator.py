@@ -20,18 +20,29 @@ def cube(a):
 # finding prime 
 def primeNo(a):
     if a <= 1:
-        return False
+        return f"{a} is not a prime number"
     for i in range(2, int(a**0.5)+ 1):
         if a % i == 0:
-            return False
-    return True    
+            return f"{a} is not a prime number"
+    return f"{a} is a prime number"  
 
 
-number = int(input("Enter a number"))
+# odds and even checker for a number
+def odd_even(a):
+    if a % 2 == 0:
+        return f"{a} is even number"
+    else:
+        return f"{a} is odd number"
 
-if primeNo(number):
-    print(f"{number} is a prime number")
-else:
-    print(f"{number} is not a prime")    
 
+# function for even odds checker
+def even_odd(numbers):
+    evens = [n for n in numbers if n % 2 == 0]
+    odds = [n for n in numbers if n % 2 != 0]
+    return evens, odds
+
+
+
+
+            
 
