@@ -52,9 +52,4 @@ while True:
         print("Goodbye")
         break
     else:
-        print("Invalid option")                
-
-
-
-
-                
+        print("Invalid option")
